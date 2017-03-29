@@ -1,0 +1,40 @@
+#root{
+  height:100%;
+}
+@font-face {
+  font-family: yofont;
+  src: url(/iconfont/iconfont.woff) format("woff"),
+  url(/iconfont/iconfont.ttf) format("truetype");
+}
+.yo-carousel{
+	height:100%;
+	width:100%;
+	.cont{
+		height:100%;
+		width:100%;
+		div{
+			height:100%;
+			width:100%;
+		}
+		li{
+			height:100%;
+			width:100%;
+			.img{
+				height:100%;
+				width:100%;
+			}
+		}
+	}
+	.index{
+		li{
+			width:0.06rem !important;
+			height:0.06rem !important;
+		    background: rgba(255,255,255,0) !important;
+		    border:1px solid rgba(255,255,255,0.5) !important; 
+		    &.on{
+			background:#fff !important;	
+		}
+		}
+
+	}
+}

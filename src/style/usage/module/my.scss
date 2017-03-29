@@ -1,0 +1,242 @@
+
+// header{
+//   display: none;
+// }
+.m-my{
+  width:100%;
+  height:100%;
+  .my-bg{
+    width:100%;
+    height:2.02rem;
+    background: url(http://s1.ucaiyuan.com/h5/1.6.4/images/my/bg.jpg)center/100% 100% no-repeat;
+    // margin-top: -.44rem;
+    position:relative;
+    .usertop{
+      width:100%;
+      height:1rem;
+      position: absolute;
+      top:20%;
+      text-align: center;
+      .deng{
+        a{
+          width:.7rem;
+          height:.7rem;
+          position: absolute;
+          left:40%;
+          border-radius: 50%;
+          background: #fff;
+          text-align: center;
+          line-height: .7rem;
+          color:#ff7012;
+        }
+
+      }
+      .username{
+          color:#dbd8d5;
+          font-size:.14rem;
+          padding: .1rem 0 0;
+          position: absolute;
+          left:37%;
+          top:65%;
+      }
+    }
+    .account{
+      width:100%;
+      height:.5rem;
+      position: absolute;
+      bottom:0;
+      i{
+        display: block;
+        background: url(http://s1.ucaiyuan.com/h5/1.6.4/images/my/top_icons.png);
+
+      }
+      .balance{
+        display: block;
+        width:40%;
+        height:100%;
+        position:absolute;
+        left:0;
+        top:0;
+        @include flexbox();
+        i{
+          display: block;
+          width:.36rem;
+          height:.36rem;
+          background-position:.36rem .36rem;
+          background-size: .72rem;
+          margin: 0 .07rem;
+        }
+        .balance-rt{
+           span:nth-child(1){
+            color:#dededd;
+            display: block;
+            font-size:.12rem;
+            @include transform(scale(0.96));
+          }
+           span:nth-child(2){
+            color:#fff;
+            display: block;
+            font-size:.16rem;
+            // margin-top: .04rem;
+          }
+        }
+      }
+      .card{
+        position:absolute;
+        right: 0;
+        top:0;
+        height:100%;
+        width:40%;
+        @include flexbox();
+        i{
+          display: block;
+          width:.36rem;
+          height:.36rem;
+          background-position:.36rem .36rem;
+          background-size: .72rem;
+          margin: 0 .07rem;
+        }
+        .card-rt{
+           span:nth-child(1){
+            color:#dededd;
+            display: block;
+            font-size:.12rem;
+            @include transform(scale(0.96));
+          }
+           span:nth-child(2){
+            color:#fff;
+            display: block;
+            font-size:.16rem;
+            // margin-top: .0  4rem;
+          }
+        }
+      }
+    }
+  }
+  .order{
+    width:100%;
+    height:.7rem;
+    background: #fff;
+    @include flexbox();
+    li{
+      @include flex();
+      @include flexbox();
+      @include flex-direction(column);
+      @include align-items(center);
+      @include justify-content(center);
+      i{
+        display: block;
+        background: url(http://s1.ucaiyuan.com/h5/1.6.4/images/my/icons.png) center/1rem .4rem no-repeat;
+        background-size: 1rem;
+        width:.2rem;
+        height:.2rem;
+        margin: .15rem auto .08rem;
+      }
+      b{
+        display:block;
+        font-size: .12rem;
+        color:gray;
+        font-weight: normal;
+      }
+      &:nth-child(1) i{
+        background-position: 0 0 ;
+      }
+      &:nth-child(2) i{
+        background-position:-.2rem 0;
+      }
+      &:nth-child(3) i{
+        background-position:-.4rem 0;
+      }
+      &:nth-child(4) i{
+        background-position:-.6rem 0;
+      }
+    }
+  }
+  .menu-list{
+    margin-top: .1rem;
+    background: #fff;
+    padding-left: .1rem;
+    width:100%;
+    li{
+      width:100%;
+      height:.4rem;
+      position: relative;
+      @include flexbox();
+      @include align-items(center);
+      border-bottom: 1px solid #eee;
+      padding-right: 7%;
+      color:gray;
+      background: url(http://s1.ucaiyuan.com/h5/1.6.4/images/icon/icon_arrow_right_1.png) 97% center/.08rem .14rem no-repeat;
+      span{
+        display: block;
+        width:.2rem;
+        height:.2rem;
+        background: url(http://s1.ucaiyuan.com/h5/1.6.4/images/my/icons.png) center/1rem .4rem no-repeat;
+        margin-right: .05rem;
+      }
+      i{
+        font-size:.12rem;
+        @include transform(scale(0.98));
+      }
+      b{
+        font-weight: normal;
+        position: absolute;
+        right:8%;
+        top:30%;
+        font-size:.12rem;
+        @include transform(scale(0.98));
+      }
+      &:nth-child(1) span{
+        background-position:-.8rem 0 ;
+      }
+      &:nth-child(2) span{
+        background-position:0 -.2rem ;
+      }
+      &:nth-child(3) span{
+        background-position:-.8rem -.2rem  ;
+      }
+      &:nth-child(4) span{
+        background-position:-.2rem -.2rem ;
+      }
+      &:nth-child(5) span{
+        background-position:-.4rem -.2rem ;
+      }
+    }
+  }
+  a{
+    display:block;
+    width:100%;
+    height:.4rem;
+    margin-top: .1rem;
+  .seeting{
+      width:100%;
+      height:.4rem;
+      padding-left: .1rem;
+      @include flexbox();
+      @include align-items(center);
+      padding-right: 7%;
+      color:gray;
+      background: #fff url(http://s1.ucaiyuan.com/h5/1.6.4/images/icon/icon_arrow_right_1.png) 97% center/.08rem .14rem no-repeat;
+      span{
+        display: block;
+        width:.2rem;
+        height:.2rem;
+        background: url(http://s1.ucaiyuan.com/h5/1.6.4/images/my/icons.png) -.6rem -.2rem/1rem .4rem no-repeat;
+        // background-size: .2rem .2rem;
+        margin-right: .05rem;
+      }
+      i{
+        font-size:.12rem;
+        @include transform(scale(0.98));
+      }
+  }
+}
+
+  .biaoyu{
+    padding: .2rem 0;
+    text-align: center;
+    img{
+      width:35%;
+    }
+  }
+}

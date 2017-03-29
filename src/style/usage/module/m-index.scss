@@ -1,0 +1,96 @@
+.m-index{
+  @include flexbox() ;
+  @include flex-direction(column);
+  height:100%;
+ 
+  section{
+    flex:1;
+    background:#eee;
+    overflow-y:auto;
+    margin-bottom:.5rem;
+  }
+  footer{
+    height:.5rem;
+    background:#fff ;
+    width:100%;
+    position:fixed !important;
+    z-index:1000;
+    left:0;
+    bottom:0;
+    @include border(1px 0 0 0, #d7d7d7);
+    ul{
+      width:100%;
+      height:100%;
+      @include flexbox();
+      li{
+        @include flex();
+
+        a{
+          @include flexbox();
+          @include flex-direction(column);
+          @include align-items(center);
+          @include justify-content(center);
+          i{
+            margin-top:.03rem;
+            position:relative;
+            display:block;
+            width:.24rem;
+            height:.24rem;
+            background: url(http://s1.ucaiyuan.com/h5/1.6.4/images/footer/icons.png) center/.96rem .48rem no-repeat;
+            span{
+              position: absolute;
+              min-width: .16rem;
+              height: .16rem;
+              @include border-radius(.06rem);
+              background: red;
+              font-size: .1rem;
+              text-align: center;
+              color: #fff;
+              left: .2rem;
+            }  
+          }
+          b{
+            line-height:.23rem;
+            font-weight:normal;
+            font-size:.12rem;
+            @include transform(scale(0.97)); 
+          }
+          b {
+            color: rgba(0, 0, 0, 0.9)
+          }
+          
+          &.active i{
+            font-weight:bold;
+            color:red;
+          }
+        }
+        &:nth-child(1) i{
+          background-position:0 0;
+        }
+        &:nth-child(2) i{
+          background-position:-.24rem 0;
+        }
+        &:nth-child(3) i{
+          background-position:-.72rem 0;
+        }
+        &:nth-child(4) i{
+          background-position:-.48rem 0;
+        }
+        &:nth-child(1) a.active i{
+          background-position:0 -.24rem;
+        }
+        &:nth-child(2) a.active i{
+          background-position:-.24rem -.24rem;
+        }
+        &:nth-child(3) a.active i{
+          background-position:-.72rem -.24rem;
+        }
+        &:nth-child(4) a.active i{
+          background-position:-.48rem -.24rem;
+        }
+        
+      }
+    }
+   
+  }
+}
